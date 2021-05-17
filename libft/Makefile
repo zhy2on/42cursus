@@ -6,7 +6,7 @@
 #    By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/14 18:03:00 by jihoh             #+#    #+#              #
-#    Updated: 2021/05/14 18:03:27 by jihoh            ###   ########.fr        #
+#    Updated: 2021/05/17 15:34:43 by jihoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,10 @@ SRCS =	ft_bzero.c \
 		ft_memset.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
-		ft_strlen.c
+		ft_strlen.c	\
+		ft_strchr.c \
+		ft_strrchr.c
+
 OBJS = ${SRCS:.c=.o}
 
 TARGET = libft.a
