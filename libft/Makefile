@@ -6,7 +6,7 @@
 #    By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/14 18:03:00 by jihoh             #+#    #+#              #
-#    Updated: 2021/05/17 15:34:43 by jihoh            ###   ########.fr        #
+#    Updated: 2021/05/17 19:24:22 by jihoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,20 @@ SRCS =	ft_bzero.c \
 		ft_strlcpy.c \
 		ft_strlen.c	\
 		ft_strchr.c \
-		ft_strrchr.c
+		ft_strrchr.c \
+		ft_strnstr.c \
+		ft_strncmp.c \
+		ft_atoi.c \
+		ft_isalpha.c \
+		ft_isdigit.c \
+		ft_isalnum.c \
+		ft_isascii.c \
+		ft_isprint.c \
+		ft_toupper.c \
+		ft_tolower.c \
+		ft_calloc.c \
+		ft_strdup.c
+
 
 OBJS = ${SRCS:.c=.o}
 
