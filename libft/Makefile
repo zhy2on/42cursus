@@ -6,7 +6,7 @@
 #    By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/14 18:03:00 by jihoh             #+#    #+#              #
-#    Updated: 2021/05/17 19:24:22 by jihoh            ###   ########.fr        #
+#    Updated: 2021/05/20 17:23:52 by jihoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,25 +36,26 @@ SRCS =	ft_bzero.c \
 		ft_toupper.c \
 		ft_tolower.c \
 		ft_calloc.c \
-		ft_strdup.c
-
+		ft_strdup.c \
+		ft_substr.c \
+		ft_strjoin.c
 
 OBJS = ${SRCS:.c=.o}
 
-TARGET = libft.a
+NAME = libft.a
 
-all: ${TARGET}
+all: $(NAME)
 
 %.o: %.c
 	${CC} ${CFLAGS} -c -o $@ $<
 
-${TARGET}: ${OBJS}
+$(NAME): ${OBJS}
 	ar -cr $@ $^
 
 clean:
 	rm -f ${OBJS}
 
 fclean: clean
-	rm -f ${TARGET}
+	rm -f $(NAME)
 
 re: fclean all
