@@ -5,90 +5,87 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/21 14:31:17 by jihoh             #+#    #+#             */
-/*   Updated: 2021/05/21 16:39:51 by jihoh            ###   ########.fr       */
+/*   Created: 2021/05/21 17:35:33 by jihoh             #+#    #+#             */
+/*   Updated: 2021/05/21 17:37:57 by jihoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	*free_strs(char **strs, size_t size)
+char			**ft_freeall(char **s)
 {
-	size_t i;
+	unsigned int	i;
 
-	i = -1;
-	while (++i < size)
-		free(strs[i]);
-	free(strs);
+	i = 0;
+	while (s[i] != NULL)
+	{
+		free(s[i]);
+		i++;
+	}
+	free(s);
 	return (NULL);
 }
 
-size_t		str_size(const char *s, char c)
+size_t			ft_wordcnt(const char *s, char c)
 {
-	size_t	i;
+	size_t			cnt;
+	size_t			i;
 
+	cnt = 0;
 	i = 0;
-	while (*s && (*s != c))
+	while (s[i])
 	{
-		s++;
-		i++;
+		if (s[i] != c)
+		{
+			cnt++;
+			while (s[i] && s[i] != c)
+				i++;
+		}
+		else
+			i++;
 	}
-	return (i);
+	return (cnt);
 }
 
-size_t		strs_size(const char *s, char c)
+char			*ft_worddup(const char *s, char c)
 {
-	size_t	i;
-	size_t	size;
+	size_t			len;
+	char			*ptr;
 
-	size = 0;
-	while (*s)
-	{
-		while (*s && (*s == c))
-			s++;
-		if (!*s)
-			break ;
-		i = str_size(s, c);
-		s += i + 1;
-		if (i)
-			size++;
-	}
-	return (size);
+	len = 0;
+	while (s[len] && s[len] != c)
+		len++;
+	if (!(ptr = (char *)ft_calloc(len + 1, sizeof(char))))
+		return (NULL);
+	ft_strlcpy(ptr, s, len + 1);
+	return (ptr);
 }
 
-const char	*my_strcpy(char *dst, const char *src, char c)
+char			**ft_split(const char *s, char c)
 {
-	while ((*src != c) && *src)
-		*dst++ = *src++;
-	*dst = '\0';
-	return (src);
-}
-
-char		**ft_split(char const *s, char c)
-{
-	char	**strs;
-	size_t	i;
+	char			**ptr;
+	size_t			len;
+	size_t			i;
+	size_t			j;
 
 	if (!s)
 		return (NULL);
-	strs = (char**)malloc((strs_size(s, c)) * sizeof(char*));
-	if (!strs)
+	len = ft_wordcnt(s, c);
+	if (!(ptr = (char **)ft_calloc(len + 1, sizeof(char *))))
 		return (NULL);
 	i = 0;
-	while (*s)
+	j = 0;
+	while (i < len && s[j])
 	{
-		while (*s == c)
-			s++;
-		if (!*s)
-			break ;
-		strs[i] = (char*)malloc((str_size(s, c) + 1) * sizeof(char));
-		if (!strs[i])
+		if (s[j] != c)
 		{
-			free_strs(strs, i);
-			return (NULL);
+			if (!(ptr[i++] = ft_worddup(&(s[j]), c)))
+				return (ft_freeall(ptr));
+			while (s[j] && s[j] != c)
+				j++;
 		}
-		s = my_strcpy(strs[i++], s, c);
+		else
+			j++;
 	}
-	strs[i] = 0;
-	return (strs);
+	return (ptr);
 }
