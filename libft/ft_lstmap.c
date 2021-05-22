@@ -1,25 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/22 14:21:25 by jihoh             #+#    #+#             */
-/*   Updated: 2021/05/22 14:53:51 by jihoh            ###   ########.fr       */
+/*   Created: 2021/05/22 16:58:37 by jihoh             #+#    #+#             */
+/*   Updated: 2021/05/22 17:02:09 by jihoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *l;
+	t_list *new;
+	t_list *next;
+	t_list *cur;
 
-	if ((l = (t_list*)malloc(sizeof(t_list))))
+	if (!lst || !(new = ft_lstnew(f(lst->content))))
+		return (NULL);
+	cur = new;
+	next = lst->next;
+	while (next)
 	{
-		l->content = content;
-		l->next = NULL;
+		if (!(cur->next = ft_lstnew(f(next->content))))
+		{
+			ft_lstclear(&new, del);
+			return (NULL);
+		}
+		cur = cur->next;
+		next = next->next;
 	}
-	return (l);
+	return (new);
 }
