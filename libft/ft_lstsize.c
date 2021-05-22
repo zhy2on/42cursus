@@ -6,7 +6,7 @@
 /*   By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 15:51:26 by jihoh             #+#    #+#             */
-/*   Updated: 2021/05/22 15:54:08 by jihoh            ###   ########.fr       */
+/*   Updated: 2021/05/22 17:28:36 by jihoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int		ft_lstsize(t_list *lst)
 	size = 0;
 	while (lst)
 	{
-		size++;
 		lst = lst->next;
+		size++;
 	}
 	return (size);
 }
