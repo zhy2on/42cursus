@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-int		*update_line(static char **backup, char *pcut, char **line)
+int		update_line(static char **backup, char *pcut, char **line)
 {
 	char	*tmp;
 
@@ -52,5 +52,5 @@ int		get_next_line(int fd, char **line)
 		backup[fd] = tmp;
 	}
 
-	return (update_line(backup[fd], pcut, line));
+	return (update_line(&backup[fd], pcut, line));
 }
