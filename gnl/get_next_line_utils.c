@@ -6,11 +6,26 @@
 /*   By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/25 14:49:50 by jihoh             #+#    #+#             */
-/*   Updated: 2021/05/25 16:35:03 by jihoh            ###   ########.fr       */
+/*   Updated: 2021/05/26 15:43:03 by jihoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+char	*ft_strdup(const char *src)
+{
+	char	*dst;
+	char	*ret;
+
+	dst = (char *)malloc(sizeof(char) * (ft_strlen(src) + 1));
+	if (!dst)
+		return (NULL);
+	ret = dst;
+	while (*src)
+		*dst++ = *src++;
+	*dst = '\0';
+	return (ret);
+}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

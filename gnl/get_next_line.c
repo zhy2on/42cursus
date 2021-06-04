@@ -6,29 +6,49 @@
 /*   By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 15:43:52 by jihoh             #+#    #+#             */
-/*   Updated: 2021/05/25 16:37:02 by jihoh            ###   ########.fr       */
+/*   Updated: 2021/05/26 16:08:28 by jihoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
+int		*update_line(static char **backup, char *pcut, char **line)
+{
+	char	*tmp;
+
+	*pcut = '\0';
+	*line = ft_strdup(*backup);
+	free(*backup);
+	if (!tmp = ft_strdup(pcut + 1))
+		*backup = NULL;
+	else
+		*backup = tmp;
+	return (1);
+}
+
 int		get_next_line(int fd, char **line)
 {
-	static char	*stored_buf[OPEN_MAX];
-	char		buf[BUFFER_SIZE + 1];
-	char		*where_endl;
-	int			size;
-	int			stored_size;
+	static char	*backup[OPEN_MAX];
+	char		*buf;
+	char		*tmp;
+	char		*pcut;
+	int			rsize;
 
-	stored_size = 0;
-	while ((size = read(fd, buf, BUFFER_SIZE)) > 0)
+	if (fd < 0 || !line || BUFFER_SIZE <= 0)
+		return (-1);
+	if (!(buf = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
+		return (-1);
+	while ((rsize = read(fd, buf, BUFFER_SIZE)) > 0)
 	{
-		stored_size += size;
-		if (where_endl = ft_strchr(buf, '\n'))
-		{
-		}
-			
+		buf[rsize] = '\0';
+		if (!backup[fd])
+			backup[fd] = ft_strdup("\0");
+		tmp = ft_strjoin(backup[fd], buf);
+		bfree(backup[fd]);
+		backup[fd] = tmp;
+		if (pcut = ft_strchr(buf, '\n'))
+				break ;
 	}
-
+	bfree(buf);
 
 }
