@@ -12,13 +12,15 @@
 
 #ifndef GET_NEXT_LINE_H
 # define GET_NEXT_LINE_H
-
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 32
+# endif
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
 
 int		get_next_line(int fd, char **line);
-int		*update_line(static char **backup, char *pcut, char **line);
+int		update_line(char **backup, int cutidx, char **line);
 char	*ft_strdup(const char *src);
 size_t	ft_strlen(const char *s);
 char	*ft_strchr(const char *s, int c);
