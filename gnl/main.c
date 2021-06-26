@@ -6,8 +6,9 @@ int	main()
 {
 	int fd;
 	char *line;
+	int ret;
 
 	fd = open("./test", O_RDONLY);
-	while (get_next_line(fd,&line) > 0)
-		printf("%s\n", line);
+	while ((ret = get_next_line(fd,&line)) > 0)
+		printf("%s, %d\n", line, ret);
 }		

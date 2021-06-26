@@ -20,7 +20,8 @@
 # include <limits.h>
 
 int		get_next_line(int fd, char **line);
-int		update_line(char **backup, int cutidx, char **line);
+int		return_case(char **backup, char **line, int rsize);
+int		update_line(char **backup, char **line);
 char	*ft_strdup(const char *src);
 size_t	ft_strlen(const char *s);
 char	*ft_strchr(const char *s, int c);
