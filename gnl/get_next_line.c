@@ -30,15 +30,18 @@ int	return_case(char **backup, char **line, int rsize)
 
 	if (rsize < 0)
 		return (-1);
-	pcut = ft_strchr(*backup, '\n');
+	if (*backup)
+		pcut = ft_strchr(*backup, '\n');
 	if (*backup && pcut)
 		return (update_line(backup, line, pcut));
-	else
+	else if (*backup)
 	{
 		*line = *backup;
 		*backup = NULL;
 		return (0);
 	}
+	ft_strdup("");
+	return (0);
 }
 
 int	get_next_line(int fd, char **line)
@@ -53,9 +56,11 @@ int	get_next_line(int fd, char **line)
 	buf = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
 	if (!buf)
 		return (-1);
-	rsize = read(fd, buf, BUFFER_SIZE);
-	while (rsize > 0)
+	while (1)
 	{
+		rsize = read(fd, buf, BUFFER_SIZE);
+		if (rsize <= 0)
+			break ;
 		buf[rsize] = '\0';
 		if (!backup[fd])
 			backup[fd] = ft_strdup("\0");
