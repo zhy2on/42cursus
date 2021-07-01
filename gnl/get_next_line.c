@@ -31,11 +31,10 @@ int	return_case(char **backup, char **line, int rsize)
 	if (rsize < 0)
 		return (-1);
 	if (*backup)
-		pcut = ft_strchr(*backup, '\n');
-	if (*backup && pcut)
-		return (update_line(backup, line, pcut));
-	else if (*backup)
 	{
+		pcut = ft_strchr(*backup, '\n');
+		if (pcut)
+			return (update_line(backup, line, pcut));
 		*line = *backup;
 		*backup = NULL;
 		return (0);
