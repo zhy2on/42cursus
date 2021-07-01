@@ -6,7 +6,7 @@
 /*   By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 15:43:52 by jihoh             #+#    #+#             */
-/*   Updated: 2021/07/01 17:45:17 by jihoh            ###   ########.fr       */
+/*   Updated: 2021/07/01 17:57:27 by jihoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	return_case(char **backup, char **line, int rsize)
 		*backup = NULL;
 		return (0);
 	}
-	*line =	ft_strdup("\0");
+	*line = ft_strdup("\0");
 	return (0);
 }
 
