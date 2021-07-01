@@ -56,17 +56,16 @@ int	get_next_line(int fd, char **line)
 	buf = (char *)malloc(sizeof(char) * (BUFFER_SIZE + 1));
 	if (!buf)
 		return (-1);
-	while (1)
+	while ((rsize = read(fd, buf, BUFFER_SIZE)) > 0)
 	{
-		rsize = read(fd, buf, BUFFER_SIZE);
-		if (rsize <= 0)
-			break ;
 		buf[rsize] = '\0';
 		if (!backup[fd])
 			backup[fd] = ft_strdup("\0");
 		tmp = ft_strjoin(backup[fd], buf);
 		free(backup[fd]);
 		backup[fd] = tmp;
+		if (ft_strchr(buf, '\n'))
+			return (return_case(&backup[fd], line, rsize));
 	}
 	free(buf);
 	return (return_case(&backup[fd], line, rsize));

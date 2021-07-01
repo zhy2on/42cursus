@@ -8,7 +8,7 @@ int	main()
 	char *line;
 	int ret;
 
-	fd = open("/Users/jihoh/Documents/42cursus/gnl/gnl_auto_test/gnl-war-machine/tests/void.txt", O_RDONLY);
+	fd = open("/Users/jihoh/Documents/42cursus/gnl/gnl_auto_test/gnl-war-machine/tests/Mr._Justice_Maxell_by_Edgar_Wallace.txt", O_RDONLY);
 	ret = 1;
 	while (ret > 0)
 	{
