@@ -65,7 +65,7 @@ int	get_next_line(int fd, char **line)
 		free(backup[fd]);
 		backup[fd] = tmp;
 		if (ft_strchr(buf, '\n'))
-			return (return_case(&backup[fd], line, rsize));
+			break ;
 	}
 	free(buf);
 	return (return_case(&backup[fd], line, rsize));
