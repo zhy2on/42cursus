@@ -6,7 +6,7 @@
 #    By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/14 18:03:00 by jihoh             #+#    #+#              #
-#    Updated: 2021/05/22 17:43:55 by jihoh            ###   ########.fr        #
+#    Updated: 2021/07/04 15:32:49 by jihoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,8 +62,11 @@ SRCS_BN = ft_lstnew.c		\
 		  ft_lstmap.c		\
 		  ft_lstdelone.c	\
 
-SRCS = 	$(SRCS_1)			\
-	  	$(SRCS_2)
+HEADER = includes
+FOLDER = srcs
+
+SRCS = 	$(addprefix $(FOLDER)/, $(SRCS_1))			\
+	  	$(addprefix $(FOLDER)/, $(SRCS_2))
 
 OBJS = $(SRCS:.c=.o)
 
@@ -72,7 +75,7 @@ OBJS_BONUS = $(SRCS_BN:.c=.o)
 all : $(NAME)
 
 %.o : %.c
-	$(CC) $(CFLAG) -c $< -o $@
+	$(CC) $(CFLAG) -c $< -o $@ -I $(HEADER)
 
 clean :
 	rm -f $(OBJS) $(OBJS_BONUS)
