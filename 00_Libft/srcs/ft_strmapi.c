@@ -22,7 +22,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (NULL);
 	len = ft_strlen(s);
-	if (!(str = (char *)ft_calloc(len + 1, sizeof(char))))
+	str = (char *)ft_calloc(len + 1, sizeof(char));
+	if (!str)
 		return (NULL);
 	while (i < len)
 	{

@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-char			**free_strs(char **strs)
+char	**free_strs(char **strs)
 {
 	while (*strs)
 	{
@@ -23,9 +23,9 @@ char			**free_strs(char **strs)
 	return (NULL);
 }
 
-size_t			strs_size(const char *s, char c)
+size_t	strs_size(const char *s, char c)
 {
-	size_t			size;
+	size_t	size;
 
 	size = 0;
 	while (*s)
@@ -42,7 +42,7 @@ size_t			strs_size(const char *s, char c)
 	return (size);
 }
 
-char			*worddup(const char *s, char c)
+char	*worddup(const char *s, char c)
 {
 	size_t			len;
 	char			*ret;
@@ -50,13 +50,14 @@ char			*worddup(const char *s, char c)
 	len = 0;
 	while (s[len] && s[len] != c)
 		len++;
-	if (!(ret = (char *)ft_calloc(len + 1, sizeof(char))))
+	ret = (char *)ft_calloc(len + 1, sizeof(char));
+	if (!ret)
 		return (NULL);
 	ft_strlcpy(ret, s, len + 1);
 	return (ret);
 }
 
-char			**ft_split(const char *s, char c)
+char	**ft_split(const char *s, char c)
 {
 	char			**strs;
 	size_t			size;
@@ -65,14 +66,16 @@ char			**ft_split(const char *s, char c)
 	if (!s)
 		return (NULL);
 	size = strs_size(s, c);
-	if (!(strs = (char **)ft_calloc(size + 1, sizeof(char *))))
+	strs = (char **)ft_calloc(size + 1, sizeof(char *));
+	if (!strs)
 		return (NULL);
 	i = 0;
 	while (i < size && *s)
 	{
 		if (*s != c)
 		{
-			if (!(strs[i++] = worddup(s, c)))
+			strs[i++] = worddup(s, c);
+			if (!strs)
 				return (free_strs(strs));
 			while (*s && *s != c)
 				s++;

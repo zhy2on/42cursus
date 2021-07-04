@@ -12,16 +12,21 @@
 
 #include "libft.h"
 
-int		ft_abs(int n)
+int	ft_abs(int n)
 {
-	return ((n > 0) ? n : -n);
+	if (n > 0)
+		return (n);
+	return (-n);
 }
 
-int		ft_itoa_len(int n)
+int	ft_itoa_len(int n)
 {
 	size_t	len;
 
-	len = (n <= 0) ? 1 : 0;
+	if (n <= 0)
+		len = 1;
+	else
+		len = 0;
 	while (n)
 	{
 		n /= 10;
@@ -36,9 +41,13 @@ char	*ft_itoa(int n)
 	int		len;
 	int		sign;
 
-	sign = (n < 0) ? -1 : 1;
+	if (n < 0)
+		sign = -1;
+	else
+		sign = 1;
 	len = ft_itoa_len(n);
-	if (!(ret = (char *)ft_calloc(len + 1, sizeof(char))))
+	ret = (char *)ft_calloc(len + 1, sizeof(char));
+	if (!ret)
 		return (NULL);
 	while (--len >= 0)
 	{

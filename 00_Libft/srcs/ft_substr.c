@@ -14,12 +14,15 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	ret[len + 1];
+	char	*ret;
 
+	ret = (char *)malloc(sizeof(char) * (len + 1));
+	if (!ret)
+		return (NULL);
 	if (!s)
 		return (NULL);
 	if (ft_strlen(s) < start)
 		return (ft_strdup(""));
 	ft_strlcpy(ret, s + start, len + 1);
-	return (ft_strdup(ret));
+	return (ret);
 }
