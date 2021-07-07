@@ -13,4 +13,9 @@
 #ifndef FT_PRNITF_H
 # define FT_PRINTF_H
 
+# include <unistd.h>
+# include <stdlib.h>
 # include <stdarg.h>
+# include <stdint.h>
+
+# define FLAGS "-+#0 "
