@@ -3,6 +3,6 @@
 
 |Circle|Project|Score|Date|
 |----|----|----|----|
-|00|Libft|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/Libft)](https://github.com/JaeSeoKim/badge42)|2021.05.24|
-|01|netwhat|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/netwhat)](https://github.com/JaeSeoKim/badge42)|2021.05.27|
-|01|get_next_line|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/get_next_line)](https://github.com/JaeSeoKim/badge42)|2021.07.02|
+|00|Libft|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/Libft)](https://github.com/zhy2on/42cursus/tree/master/00_Libft)|2021.05.24|
+|01|netwhat|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/netwhat)](https://github.com/zhy2on/42cursus/tree/master/01_ft_printf)|2021.05.27|
+|01|get_next_line|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/get_next_line)](https://github.com/zhy2on/42cursus/tree/master/01_get_next_line)|2021.07.02|
