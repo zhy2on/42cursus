@@ -4,3 +4,6 @@
 [submodule "01_netwhat"]
 	path = 01_netwhat
 	url = https://github.com/zhy2on/42cursus_01_netwhat
+[submodule "01_Born2beroot"]
+	path = 01_Born2beroot
+	url = https://github.com/zhy2on/42cursus_01_Born2beroot.git
