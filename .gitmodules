@@ -7,3 +7,6 @@
 [submodule "01_Born2beroot"]
 	path = 01_Born2beroot
 	url = https://github.com/zhy2on/42cursus_01_Born2beroot.git
+[submodule "02_minitalk"]
+	path = 02_minitalk
+	url = https://github.com/zhy2on/42cursus_02_minitalk.git
