@@ -10,4 +10,4 @@
 |01|Born2beroot|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/Born2beroot)](https://github.com/zhy2on/42cursus_01_Born2beroot)|2021.08.16|
 |02|minitalk|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/minitalk)](https://github.com/zhy2on/42cursus_02_minitalk)|2021.08.24|
 |02|push_swap|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/push_swap)](https://github.com/zhy2on/42cursus_02_push_swap)|-|
-|02|so_long|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/so_long)](https://github.com/zhy2on/42cursus_02_so_long)|-|
+|02|fract-ol|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/fract-ol)](https://github.com/zhy2on/42cursus_02_fract-ol)|-|
