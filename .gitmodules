@@ -10,3 +10,6 @@
 [submodule "02_minitalk"]
 	path = 02_minitalk
 	url = https://github.com/zhy2on/42cursus_02_minitalk.git
+[submodule "02_fract-ol"]
+	path = 02_fract-ol
+	url = https://github.com/zhy2on/42cursus_02_fract-ol.git
