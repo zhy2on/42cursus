@@ -6,7 +6,7 @@
 #    By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/14 18:03:00 by jihoh             #+#    #+#              #
-#    Updated: 2021/07/04 17:59:40 by jihoh            ###   ########.fr        #
+#    Updated: 2022/02/09 02:58:42 by jihoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,17 +62,26 @@ SRCS_BN = ft_lstnew.c		\
 		  ft_lstmap.c		\
 		  ft_lstdelone.c	\
 
+SRCS_GNL = get_next_line.c
+
 HEADER = includes
 FOLDER = srcs
 
-SRCS = 	$(addprefix $(FOLDER)/, $(SRCS_1))			\
-	  	$(addprefix $(FOLDER)/, $(SRCS_2))
+SRCS = 	$(addprefix $(FOLDER)/, $(SRCS_1))		\
+	  	$(addprefix $(FOLDER)/, $(SRCS_2))	\
+		$(addprefix $(FOLDER)/, $(SRCS_GNL))
 
 OBJS =  $(SRCS:.c=.o)
 
 OBJS_BONUS = $(addprefix $(FOLDER)/, $(SRCS_BN:.c=.o))
 
 all : $(NAME)
+
+$(NAME) : $(OBJS)
+	ar -cr $@ $^
+
+bonus : $(OBJS) $(OBJS_BONUS)
+	ar -cr  $(NAME) $^
 
 %.o : %.c
 	$(CC) $(CFLAG) -c $< -o $@ -I $(HEADER)
@@ -84,11 +93,5 @@ fclean : clean
 	rm -f $(NAME)
 
 re : fclean all
-
-$(NAME) : $(OBJS)
-	ar -cr $@ $^
-
-bonus : $(OBJS) $(OBJS_BONUS)
-	ar -cr  $(NAME) $^
 
 .PHONY : all clean fclean re
