@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_max.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/24 15:46:12 by jihoh             #+#    #+#             */
-/*   Updated: 2022/02/09 03:11:07 by jihoh            ###   ########.fr       */
+/*   Created: 2022/02/09 03:13:03 by jihoh             #+#    #+#             */
+/*   Updated: 2022/02/09 03:13:21 by jihoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 32
-# endif
-# include <unistd.h>
-# include <stdlib.h>
-# include <limits.h>
-# include <libft.h>
+#include "libft.h"
 
-int		get_next_line(int fd, char **line);
-int		return_case(char **backup, char **line, int rsize);
-int		update_line(char **backup, char **line, char *pcut);
-
-#endif
+int	ft_max(int n, int m)
+{
+	if (n > m)
+		return (n);
+	else
+		return (m);
+}
