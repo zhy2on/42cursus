@@ -6,7 +6,7 @@
 #    By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/14 18:03:00 by jihoh             #+#    #+#              #
-#    Updated: 2022/02/09 16:47:50 by jihoh            ###   ########.fr        #
+#    Updated: 2022/02/09 17:12:32 by jihoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,19 +47,23 @@ all : $(NAME)
 
 $(NAME) : $(OBJS)
 	@ar -cr $@ $^
+	@printf '\033[32m[ ✔ ] %s\n\033[0m' "Libft done"
 
 bonus : $(OBJS) $(OBJS_BONUS)
 	@ar -cr $(NAME) $^
+	@printf '\033[32m[ ✔ ] %s\n\033[0m' "Libft bonus done"
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 	@mkdir -p $(OBJ_DIR)
-	@$(CC) $(CFLAG) -c $< -o $@ -I $(INC_DIR)
+	$(CC) $(CFLAG) -c $< -o $@ -I $(INC_DIR)
 
 clean :
-	@rm -f $(OBJS) $(OBJS_BONUS)
+	@rm -rf $(OBJS) $(OBJS_BONUS) $(OBJ_DIR)
+	@printf '\033[31m[ ✔ ] %s\n\033[0m' "clean"
 
 fclean : clean
-	@rm -f $(NAME)
+	@rm -rf $(NAME)
+	@printf '\033[31m[ ✔ ] %s\n\033[0m' "fclean"
 
 re : fclean all
 
