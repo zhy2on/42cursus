@@ -13,3 +13,6 @@
 [submodule "02_fract-ol"]
 	path = 02_fract-ol
 	url = https://github.com/zhy2on/42cursus_02_fract-ol.git
+[submodule "02_push_swap"]
+	path = 02_push_swap
+	url = https://github.com/zhy2on/42cursus_02_push_swap.git
