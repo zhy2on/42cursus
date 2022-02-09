@@ -6,7 +6,7 @@
 #    By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/14 18:03:00 by jihoh             #+#    #+#              #
-#    Updated: 2022/02/09 17:12:32 by jihoh            ###   ########.fr        #
+#    Updated: 2022/02/09 19:09:59 by jihoh            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,24 +46,27 @@ OBJS_BONUS = $(addprefix $(OBJ_DIR), $(OBJS_BONUS_NAME))
 all : $(NAME)
 
 $(NAME) : $(OBJS)
+	@echo "\033[2K \033[A"
 	@ar -cr $@ $^
-	@printf '\033[32m[ ✔ ] %s\n\033[0m' "Libft done"
+	@echo "\033[32m[$(NAME)]: done\033[0m"
 
 bonus : $(OBJS) $(OBJS_BONUS)
+	@echo "\033[2K \033[A"
 	@ar -cr $(NAME) $^
-	@printf '\033[32m[ ✔ ] %s\n\033[0m' "Libft bonus done"
+	@echo "\033[32m[$(NAME)]: bonus done\033[0m"
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 	@mkdir -p $(OBJ_DIR)
-	$(CC) $(CFLAG) -c $< -o $@ -I $(INC_DIR)
+	@echo "\033[2K [$(NAME)]: Compilation of $< \033[A"
+	@$(CC) $(CFLAG) -c $< -o $@ -I $(INC_DIR)
 
 clean :
 	@rm -rf $(OBJS) $(OBJS_BONUS) $(OBJ_DIR)
-	@printf '\033[31m[ ✔ ] %s\n\033[0m' "clean"
+	@echo "\033[31m[ ✔ ] clean\033[0m"
 
 fclean : clean
 	@rm -rf $(NAME)
-	@printf '\033[31m[ ✔ ] %s\n\033[0m' "fclean"
+	@echo "\033[31m[ ✔ ] fclean\033[0m"
 
 re : fclean all
 
