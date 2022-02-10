@@ -11,3 +11,4 @@
 |02|minitalk|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/minitalk)](https://github.com/zhy2on/42cursus_02_minitalk)|2021.08.24|
 |02|push_swap|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/push_swap)](https://github.com/zhy2on/42cursus_02_push_swap)|-|
 |02|fract-ol|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/fract-ol)](https://github.com/zhy2on/42cursus_02_fract-ol)|-|
+|03|Philosophers|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/Philosophers)](https://github.com/zhy2on/42cursus_03_Philosophers)|-|
