@@ -12,3 +12,4 @@
 |02|fract-ol|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/fract-ol)](https://github.com/zhy2on/42cursus_02_fract-ol)|2022.02.12|
 |02|push_swap|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/push_swap)](https://github.com/zhy2on/42cursus_02_push_swap)|-|
 |03|Philosophers|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/Philosophers)](https://github.com/zhy2on/42cursus_03_Philosophers)|-|
+|03|minishell|[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/jihoh/minishell)](https://github.com/zhy2on/42cursus_03_minishell)|-|
