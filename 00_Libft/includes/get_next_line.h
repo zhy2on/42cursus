@@ -6,7 +6,7 @@
 /*   By: jihoh <jihoh@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 15:46:12 by jihoh             #+#    #+#             */
-/*   Updated: 2022/02/09 03:11:07 by jihoh            ###   ########.fr       */
+/*   Updated: 2022/03/07 16:36:28 by jihoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
-# include <libft.h>
+# include "libft.h"
 
 int		get_next_line(int fd, char **line);
 int		return_case(char **backup, char **line, int rsize);
