@@ -1,4 +1,4 @@
-[![jihoh's 42 stats](https://badge42.herokuapp.com/api/stats/jihoh?privacyName=true)](https://github.com/JaeSeoKim/badge42)
+[![jihoh's 42 stats](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/stats?cursusId=21&coalitionId=87)](https://github.com/JaeSeoKim/badge42)
 
 
 |Circle|Project|Score|Date|
