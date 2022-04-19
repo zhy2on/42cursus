@@ -16,6 +16,3 @@
 [submodule "02_push_swap"]
 	path = 02_push_swap
 	url = https://github.com/zhy2on/42cursus_02_push_swap.git
-[submodule "03_Philosophers"]
-	path = 03_Philosophers
-	url = https://github.com/zhy2on/42cursus_03_Philosophers.git
