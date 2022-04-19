@@ -10,6 +10,6 @@
 |01|Born2beroot|[![jihoh's 42 Born2beroot Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2179885)](https://github.com/zhy2on/42cursus_01_Born2beroot)|2021.08.16|
 |02|minitalk|[![jihoh's 42 minitalk Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2295276)](https://github.com/zhy2on/42cursus_02_minitalk)|2021.08.24|
 |02|fract-ol|[![jihoh's 42 fract-ol Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2312501)](https://github.com/zhy2on/42cursus_02_fract-ol)|2022.02.12|
-|02|push_swap|[![jihoh's 42 push_swap Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2295057)](https://github.com/zhy2on/42cursus_02_push_swap)|-|
-|03|Philosophers||-|
+|02|push_swap|[![jihoh's 42 push_swap Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2295057)](https://github.com/zhy2on/42cursus_02_push_swap)|2022.03.03|
+|03|Philosophers|[![jihoh's 42 stats](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/stats?cursusId=21&coalitionId=87)](https://github.com/zhy2on/42cursus_03_Philosopheres)|2022.04.19|
 |03|minishell||-|
