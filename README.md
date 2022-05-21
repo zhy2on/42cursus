@@ -13,3 +13,4 @@
 |02|push_swap|[![jihoh's 42 push_swap Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2295057)](https://github.com/zhy2on/42cursus_02_push_swap)|2022.03.03|
 |03|Philosophers|[![jihoh's 42 Philosophers Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2563439)](https://github.com/zhy2on/42cursus_03_Philosophers)|2022.04.19|
 |03|minishell|[![jihoh's 42 minishell Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2565986)](https://github.com/zhy2on/42cursus_03_minishell)|-|
+|04|CPP Module|[![jihoh's 42 minishell Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2565986)](https://github.com/zhy2on/42cursus_04_CPP_Module)|-|
