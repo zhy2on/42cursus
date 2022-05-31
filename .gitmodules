@@ -19,3 +19,6 @@
 [submodule "03_Philosophers"]
 	path = 03_Philosophers
 	url = https://github.com/zhy2on/42cursus_03_Philosophers.git
+[submodule "03_minishell"]
+	path = 03_minishell
+	url = https://github.com/zhy2on/42cursus_03_minishell
