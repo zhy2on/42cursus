@@ -22,3 +22,6 @@
 [submodule "03_minishell"]
 	path = 03_minishell
 	url = https://github.com/zhy2on/42cursus_03_minishell
+[submodule "04_CPP_Module"]
+	path = 04_CPP_Module
+	url = https://github.com/zhy2on/42cursus_04_CPP_Module.git
