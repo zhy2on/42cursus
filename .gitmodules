@@ -25,3 +25,6 @@
 [submodule "04_CPP_Module"]
 	path = 04_CPP_Module
 	url = https://github.com/zhy2on/42cursus_04_CPP_Module.git
+[submodule "04_miniRT"]
+	path = 04_miniRT
+	url = https://github.com/zhy2on/42cursus_04_miniRT.git
