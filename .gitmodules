@@ -28,3 +28,6 @@
 [submodule "04_miniRT"]
 	path = 04_miniRT
 	url = https://github.com/zhy2on/42cursus_04_miniRT.git
+[submodule "05_ft_containers"]
+	path = 05_ft_containers
+	url = https://github.com/zhy2on/42cursus_05_ft_containers
