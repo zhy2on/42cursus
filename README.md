@@ -2,7 +2,7 @@
 
 ## Subject
 |Circle|Subject|Score|Date|
-|----|----|----|:----:|
+|----|----|:----:|:----:|
 |00|[Libft](https://github.com/zhy2on/42cursus/tree/master/00_Libft)|[![jihoh's 42 Libft Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2295057)](https://github.com/JaeSeoKim/badge42)|2021.05.24|
 |01|[netwhat](https://github.com/zhy2on/42cursus_01_netwhat)|[![jihoh's 42 netwhat Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2179881)](https://github.com/JaeSeoKim/badge42)|2021.05.27|
 |01|[get_next_line](https://github.com/zhy2on/42cursus/tree/master/01_get_next_line)|[![jihoh's 42 get_next_line Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2179882)](https://github.com/JaeSeoKim/badge42)|2021.07.02|
@@ -17,11 +17,14 @@
 |04|[miniRT](https://github.com/zhy2on/42cursus_04_miniRT.git)|[![jihoh's 42 miniRT Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2606682)](https://github.com/JaeSeoKim/badge42)|2022.08.15|
 |05|[ft_containers](https://github.com/zhy2on/42cursus_05_ft_containers)|[![jihoh's 42 ft_containers Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2800183)](https://github.com/JaeSeoKim/badge42)|2022.10.10|
 |05|[Inception](https://github.com/zhy2on/42cursus_05_Inception)|[![jihoh's 42 Inception Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2814722)](https://github.com/JaeSeoKim/badge42)|2022.11.04|
+|05|webserv| - | - |
+|06|ft_transcendence| - | - |
 
 ## Exam
 |Circle|Exam|Score|Date|
-|----|----|----|:----:|
-|01|Exam Rank 02|[![jihoh's 42 Exam Rank 02 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2570602)](https://github.com/JaeSeoKim/badge42)|2022.06.13|
-|02|Exam Rank 03|[![jihoh's 42 Exam Rank 03 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2570603)](https://github.com/JaeSeoKim/badge42)|2022.06.16|
-|03|Exam Rank 04|[![jihoh's 42 Exam Rank 04 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2625028)](https://github.com/JaeSeoKim/badge42)| 2022.09.21 |
-|04|Exam Rank 05|[![jihoh's 42 Exam Rank 05 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2800179)](https://github.com/JaeSeoKim/badge42)| 2022.11.15 |
+|----|----|:----:|:----:|
+|02|Exam Rank 02|[![jihoh's 42 Exam Rank 02 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2570602)](https://github.com/JaeSeoKim/badge42)|2022.06.13|
+|03|Exam Rank 03|[![jihoh's 42 Exam Rank 03 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2570603)](https://github.com/JaeSeoKim/badge42)|2022.06.16|
+|04|Exam Rank 04|[![jihoh's 42 Exam Rank 04 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2625028)](https://github.com/JaeSeoKim/badge42)| 2022.09.21 |
+|05|Exam Rank 05|[![jihoh's 42 Exam Rank 05 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2800179)](https://github.com/JaeSeoKim/badge42)| 2022.11.15 |
+|06|Exam Rank 06|-| - |
