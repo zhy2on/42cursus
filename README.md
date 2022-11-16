@@ -24,4 +24,4 @@
 |01|Exam Rank 02|[![jihoh's 42 Exam Rank 02 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2570602)](https://github.com/JaeSeoKim/badge42)|2022.06.13|
 |02|Exam Rank 03|[![jihoh's 42 Exam Rank 03 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2570603)](https://github.com/JaeSeoKim/badge42)|2022.06.16|
 |03|Exam Rank 04|[![jihoh's 42 Exam Rank 04 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2625028)](https://github.com/JaeSeoKim/badge42)| 2022.09.21 |
-|04|Exam Rank 05|[![jihoh's 42 Exam Rank 05 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2800179)](https://github.com/JaeSeoKim/badge42)| - |
+|04|Exam Rank 05|[![jihoh's 42 Exam Rank 05 Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2800179)](https://github.com/JaeSeoKim/badge42)| 2022.11.15 |
