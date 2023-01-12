@@ -17,7 +17,7 @@
 |04|[miniRT](https://github.com/zhy2on/42cursus_04_miniRT.git)|[![jihoh's 42 miniRT Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2606682)](https://github.com/JaeSeoKim/badge42)|2022.08.15|
 |05|[ft_containers](https://github.com/zhy2on/42cursus_05_ft_containers)|[![jihoh's 42 ft_containers Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2800183)](https://github.com/JaeSeoKim/badge42)|2022.10.10|
 |05|[Inception](https://github.com/zhy2on/42cursus_05_Inception)|[![jihoh's 42 Inception Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2814722)](https://github.com/JaeSeoKim/badge42)|2022.11.04|
-|05|webserv| - | - |
+|05|[webserv](https://github.com/keonwoo98/webserv)| [![jihoh's 42 webserv Score](https://badge42.vercel.app/api/v2/cl20ermdo001609jt58jpvos4/project/2862475)](https://github.com/JaeSeoKim/badge42) | 2023.01.09 |
 |06|ft_transcendence| - | - |
 
 ## Exam
