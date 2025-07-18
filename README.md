@@ -1,9 +1,14 @@
+## Blog
+https://velog.io/@zhy2on/series/42Seoul  
+https://velog.io/@zhy2on/series/C-STL
+
 ## Subject
 |Circle|Subject|Date|
 |----|----|:----:|
 |00|[Libft](https://github.com/zhy2on/42cursus/tree/master/00_Libft)|2021.05.24|
 |01|[netwhat](https://github.com/zhy2on/42cursus_01_netwhat)|2021.05.27|
-|01|[get_next_line](https://github.com/zhy2on/42cursus/tree/master/01_get_next_line)|2021.08.04|
+|01|[get_next_line](https://github.com/zhy2on/42cursus/tree/master/01_get_next_line)|2021.07.02|
+|01|[ft_printf](https://github.com/zhy2on/42cursus_01_ft_printf)|2021.08.04|
 |01|[Born2beroot](https://github.com/zhy2on/42cursus_01_Born2beroot)|2021.08.16|
 |02|[minitalk](https://github.com/zhy2on/42cursus_02_minitalk)|2021.08.24|
 |02|[fract-ol](https://github.com/zhy2on/42cursus_02_fract-ol)|2022.02.12|
