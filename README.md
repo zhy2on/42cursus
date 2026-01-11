@@ -24,4 +24,4 @@ https://velog.io/@zhy2on/series/C-STL
 | 04     | [miniRT](https://github.com/zhy2on/42cursus_04_miniRT.git)                       | `Ray Tracing` 기반 3D 렌더링                | 2022.08.15 |
 | 05     | [ft_containers](https://github.com/zhy2on/42cursus_05_ft_containers)             | `STL` 컨테이너 구현 (`자료구조`, `Template`)     | 2022.10.10 |
 | 05     | [Inception](https://github.com/zhy2on/42cursus_05_Inception)                     | `Docker` 기반 컨테이너 아키텍처                  | 2022.11.04 |
-| 05     | [webserv](https://github.com/keonwoo98/webserv)                                  | `HTTP/1.1` 웹 서버 (`I/O`, `아키텍처`)        | 2023.01.09 |
+| 05     | [webserv](https://github.com/keonwoo98/webserv)                                  | `C++` 기반 `HTTP/1.1` 웹 서버 (`I/O`, `아키텍처`)        | 2023.01.09 |
